@@ -5,7 +5,7 @@ const Hero = () => {
       <>
      <section className='hero'>
       <div className="container">
-        <div className="row ">
+        <div className="roww ">
         <div id='heading'>
         <h1><span className='text-black'>Grow</span> your skills,</h1>
         <h3>Build <span className='text-black'>your</span> future</h3>
@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
       </div>
      </section>
-     <div className="margin"></div>
+     <div className="marginn"></div>
      </>
     )
 }

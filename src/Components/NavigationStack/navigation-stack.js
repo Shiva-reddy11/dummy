@@ -1,8 +1,8 @@
-import Login from "../login";
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import SignUp from "../sign-up";
 import Home from "../home";
-import About from "../About/about";
+import About from "../About/about-page";
+import CoursePage from "../AllCourses/course-page";
+
 
 const NavigationStack = () => {
 return(
@@ -10,8 +10,7 @@ return(
     <Routes>
     <Route path="/" Component={Home}/>
     <Route path="/about" Component={About}/>
-    <Route path="/login" Component={Login}/>
-    <Route path="/signup" Component={SignUp}/>
+    <Route path="/courses" Component={CoursePage}/>
     </Routes>
     </BrowserRouter>
 )

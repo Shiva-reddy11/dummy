@@ -18,18 +18,19 @@ const Navbar = () => {
 
   return (
     <nav id="bg-nav" className="p-5 flex justify-between items-center">
-      <p className="text-3xl font-medium font-display ml-10 mb-2 items-center ">
-        <span className="text-secondary">E</span>Learn
-        <span className="text-secondary">ing</span>
-      </p>
+     <p className="text-3xl font-medium font-display ml-10 mb-2 items-center ">
+     <Link to={'/'}> <span className="text-secondary">E</span>Learn
+        <span className="text-secondary">ing</span></Link>
+      </p> 
 
       <div id="nav-menu" className="hidden lg:flex gap-12 items-center ">
        <Link to={'/'}> <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Home
         </ul></Link>
+        <Link to={'/courses'}>
         <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Courses
-        </ul>
+        </ul></Link>
         <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Bolgs
         </ul>
@@ -58,8 +59,8 @@ const Navbar = () => {
       >
         <div id="nav-bar" className="flex justify-between items-center">
           <p className="text-3xl font-medium font-display">
-            <span className="text-secondary">E</span>Learn
-            <span className="text-secondary">ing</span>
+          <Link to={'/'}> <span className="text-secondary">E</span>Learn
+            <span className="text-secondary">ing</span></Link>
           </p>
 
           <button
@@ -70,12 +71,12 @@ const Navbar = () => {
           </button>
         </div>
         <div className="mt-6">
-          <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
+        <Link to={'/'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Home
-          </ul>
-          <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
+          </ul></Link>
+          <Link to={'/courses'}><ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Courses
-          </ul>
+          </ul></Link> 
           <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Bolgs
           </ul>

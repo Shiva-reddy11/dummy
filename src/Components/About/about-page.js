@@ -7,8 +7,7 @@ import Navbar from '../navbar'
 const About = () => {
   return (
     <>
-    <div id='nav-position'><Navbar/></div>
-    
+    <Navbar/>
     <Back title='About Us'/>
     <AboutCard />
     </>

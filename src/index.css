@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@media screen and (min-width:50px) and (max-width:767px){
+    #root{
+        width: 647px;
+    }
+}

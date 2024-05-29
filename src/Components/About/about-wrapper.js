@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import { awrapper } from "../../dummy-data"
+import CountUp from 'react-countup'
 
 
 const AboutWrapper = () => {
@@ -15,7 +16,10 @@ const AboutWrapper = () => {
                   <img src={val.cover} alt='' />
                 </div>
                 <div className='text'>
-                  <h1>{val.data}</h1>
+                  <h1>
+                  <CountUp start={0} end={val.data}>
+                  </CountUp>
+                  </h1>
                   <h3>{val.title}</h3>
                 </div>
               </div>
