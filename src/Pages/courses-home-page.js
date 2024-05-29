@@ -4,14 +4,14 @@ import { coursesCard } from '../dummy-data'
 import OnlineCourses from '../Components/AllCourses/online-courses'
 import img2 from '../Assets/courses/c2.png'
 import back from '../Assets/back.webp'
-
+import '../Components/AllCourses/courses.css'
 
 const CoursesHomePage = () => {
   return (
    <>
    <>
       <section className='homeAbout'>
-        <div className='container'>
+        <div className='container-home'>
           <Title subtitle='our courses' title='explore our popular online courses' />
           <div className='courseCard'>
     <div className='container grid2'>
