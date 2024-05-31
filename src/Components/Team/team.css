@@ -1,0 +1,70 @@
+.team {
+    background-color: #f8f8f8;
+    
+}
+.team .items{
+ transition: 0.5s;
+ cursor: pointer;
+}
+.shadow{
+    box-shadow: 0 5px 25px -2px rgba(0 0 0 /6%);
+    background-color: #fff;
+    transition: 0.5s;
+}
+.team .img {
+    position: relative;
+}
+.team img {
+    width: 100%;
+    height: 100%;
+}
+.team .details {
+    padding: 30px;
+    text-align: center;
+
+}
+.team .details h2 {
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.team .details p {
+    font-size: 15;
+    color: gray;
+    margin-top: 10px;
+    transition: 0.05s;
+}
+.team .shadow:hover{
+    background-color: #1eb2a6;
+    color: #fff;
+    cursor: pointer;
+}
+.team .shadow:hover p {
+    color: #fff;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+@media screen and (max-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    } 
+     .key6,.key7{
+       display: none;
+
+    }
+}
+
+
+@media screen and (min-width:50px) and (max-width:767px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    } 
+    .key6,.key7{
+        display: block;
+ 
+     }
+}

@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
-import Back from '../Back/back'
 import AboutCard from './about-card'
 import Navbar from '../navbar'
+import Back from '../Common/back'
 
 const About = () => {
   return (

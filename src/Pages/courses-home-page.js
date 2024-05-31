@@ -1,10 +1,10 @@
 import React from 'react'
-import Title from '../Components/title'
 import { coursesCard } from '../dummy-data'
 import OnlineCourses from '../Components/AllCourses/online-courses'
 import img2 from '../Assets/courses/c2.png'
 import back from '../Assets/back.webp'
 import '../Components/AllCourses/courses.css'
+import Title from '../Components/Common/title'
 
 const CoursesHomePage = () => {
   return (

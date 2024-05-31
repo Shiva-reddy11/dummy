@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom';
 import './hero.css'
+import CoursesHomePage from '../../Pages/courses-home-page';
+import About from '../About/about-page';
 
 const Hero = () => {
     return(
       <>
-     <section className='hero'>
+     <section className='hero'> 
       <div className="container">
         <div className="roww ">
         <div id='heading'>
@@ -12,13 +15,13 @@ const Hero = () => {
     </div>
            <p className='title'>We collaborate to ensure every student achieves academic, social, and emotional success by working together and providing comprehensive support.</p>
            <div className="button">
-            <button className="primary-btn " id='btn-green'>GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i></button>
-            <button className="primary-btn">View Course<i className="fa fa-long-arrow-alt-right"></i></button>
+           <Link to={'/CoursesHomePage'}> <button className="primary-btn " id='btn-green'>GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i></button></Link>
+            <Link to={'/courses'}><button className="primary-btn " >View Course<i className="fa fa-long-arrow-alt-right"></i></button></Link>
 
            </div>
         </div>
       </div>
-     </section>
+      </section>
      <div className="marginn"></div>
      </>
     )

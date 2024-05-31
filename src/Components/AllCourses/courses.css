@@ -159,6 +159,30 @@ color: #fff;
     bottom: 50px;
   }
   
+  @media screen and (max-width: 768px){
+    
+  }
+
+
+  @media screen and (min-width:1023px) and (max-width:1025px){
+    
+    .courseCard{
+      width: 128%;
+      
+    }
+    .online{
+      width: 128%;
+      
+    }
+    .content1 {
+    position: relative;
+    right: 38px;
+      
+    }
+  }
+  @media screen and (min-width:50px) and (max-width:767px) {
+
+  }
  
  
   

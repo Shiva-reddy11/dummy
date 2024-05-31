@@ -424,4 +424,57 @@ export const homeAbout = [
       desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
       cover: "./images/testo/t3.webp",
     },
+   
+  ]
+
+
+  export const topcategory=[
+    {
+      id: 1,
+      course: "React js Developer",
+      image: "https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6"
+    },
+    {
+      id: 2,
+      course: "Angular js Developer",
+      image: "https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6",
+    },
+    {
+      id: 3,
+      course: "mern Stack Developer",
+      image: "https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6",
+    },
+    {
+      id: 4,
+      course: "Devops",
+      image: "https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6",
+    }
+  ]
+
+  export const exploreCourses =[
+    {id:'1',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+    {id:'2',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+    {id:'3',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+    {id:'4',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+    {id:'5',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+    {id:'6',
+      image:'https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6',
+    price:'1999/-',
+    title:'Fundamentals html/css'},
+
   ]

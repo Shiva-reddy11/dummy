@@ -1,9 +1,9 @@
 import React from 'react'
-import Title from '../title'
 import { online } from '../../dummy-data'
 import img9 from '../../Assets/courses/online/o1.png'
 import back from '../../Assets/courses/online/o1.1.png'
 import CountUp from 'react-countup'
+import Title from '../Common/title'
 
 const OnlineCourses = () => {
   return (

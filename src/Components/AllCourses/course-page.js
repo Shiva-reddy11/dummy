@@ -1,8 +1,8 @@
 import React from 'react'
-import Back from '../Back/back'
 import CoursesCard from './courses-card'
 import Navbar from '../navbar'
 import OnlineCourses from './online-courses'
+import Back from '../Common/back'
 
 const CoursePage = () => {
   return (

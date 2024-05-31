@@ -171,12 +171,15 @@
     position: relative;
     bottom: 20rem;
     left: 0;
-    right: 0;
-    
+    right: 0;  
+  }
+  .key3{
+    display: none;
   }
   .marginn{
     margin-top: 60.3%;
   }
+
 }
 
 

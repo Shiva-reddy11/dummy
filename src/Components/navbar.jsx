@@ -10,6 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     handleMenu();
   }, []);
+  
   const handleMenu = () => {
     if (navDialogRef.current) {
       navDialogRef.current.classList.toggle("hidden");
@@ -31,9 +32,9 @@ const Navbar = () => {
         <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Courses
         </ul></Link>
-        <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
+        <Link to={'/team'}> <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Bolgs
-        </ul>
+        </ul></Link>
        <Link to={'/about'}> <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           About
         </ul></Link>
@@ -74,12 +75,14 @@ const Navbar = () => {
         <Link to={'/'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Home
           </ul></Link>
-          <Link to={'/courses'}><ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
+          <Link to={'/courses'}>
+            <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Courses
-          </ul></Link> 
-          <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
-            Bolgs
           </ul>
+          </Link> 
+         <Link to={'/team'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
+            Bolgs
+          </ul></Link>
           <Link to={'/about'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             About
           </ul></Link>
