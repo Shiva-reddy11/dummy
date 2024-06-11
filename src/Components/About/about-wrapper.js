@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+// import './about.css'
 import { awrapper } from "../../dummy-data"
 import CountUp from 'react-countup'
 

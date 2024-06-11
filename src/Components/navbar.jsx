@@ -18,6 +18,7 @@ const Navbar = () => {
   };
 
   return (
+    <section>
     <nav id="bg-nav" className="p-5 flex justify-between items-center">
      <p className="text-3xl font-medium font-display ml-10 mb-2 items-center ">
      <Link to={'/'}> <span className="text-secondary">E</span>Learn
@@ -53,6 +54,10 @@ const Navbar = () => {
         <img src={menu} alt="menuimg" className="text-gray-600" />
       </button>
 
+
+
+
+{/* /////////////////////////////////////////////////////////////// */}
       <div
         ref={navDialogRef}
         id="nav-dialog"
@@ -96,6 +101,7 @@ const Navbar = () => {
         </button>
       </div>
     </nav>
+    </section>
   );
 };
 

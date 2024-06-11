@@ -1,14 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "../home";
 import About from "../About/about-page";
-import TeamPage from "../Team/team-page";
 import CoursesHomePage from "../../Pages/courses-home-page";
 import SignupPage from "../Login-Signup/signup-page";
 import LoginPage from "../Login-Signup/login-page";
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 import { InitialState, ReducerFun } from "../Functions/useReducer";
 import CoursesPage from "../Courses/courses-page";
-import CoursePage from "../AllCourses/course-page";
+
 
 
 const NavigationStack = () => {
@@ -22,8 +21,7 @@ return(
     <Routes>
     <Route path="/" Component={Home}/>
     <Route path="/about" Component={About}/>
-    <Route path="/courses" Component={CoursePage}/>
-    <Route path="/team" Component={TeamPage}/>
+    <Route path="/courses" Component={CoursesPage}/>
     </Routes>
 
     <Routes>

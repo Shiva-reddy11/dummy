@@ -428,6 +428,8 @@ export const homeAbout = [
   ]
 
 
+// ///////////////////////////////////////////////////////////////////////////////
+
   export const topcategory=[
     {
       id: 1,
@@ -441,7 +443,7 @@ export const homeAbout = [
     },
     {
       id: 3,
-      course: "mern Stack Developer",
+      course: "Fundamentals",
       image: "https://firebasestorage.googleapis.com/v0/b/e-learning-website-d1e13.appspot.com/o/Images%2Fcategory-imgs%2Freact%20png.png?alt=media&token=7f39707c-16ff-483b-a178-64390d59c1a6",
     },
     {
