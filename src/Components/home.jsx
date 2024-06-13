@@ -3,7 +3,10 @@ import Navbar from "./navbar";
 import '../App.css'
 import AboutCard from "./About/about-card";
 import Example from "./Courses/top-courses";
-import CoursesPage from "./Courses/courses-page";
+import CoursesCardsHome from "../Pages/courses-home-page";
+import Footer from "./Footer/footer";
+import StudentsReviews3 from "./Testimonials/testimonial2";
+
 
 
 
@@ -14,8 +17,10 @@ const Home = () => {
  <Navbar/>
  <Hero/>
  <AboutCard/>
- {/* <Example/> */}
-{/* <CoursesPage/> */}
+ <Example/>
+ <CoursesCardsHome/>
+ <StudentsReviews3/>
+<Footer/>
   
   </>
     )

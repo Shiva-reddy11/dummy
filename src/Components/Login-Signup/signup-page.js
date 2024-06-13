@@ -2,7 +2,6 @@ import React, { useReducer } from 'react'
 import './style.css'
 import googleicon from '../../Assets/google-logo-icon.png'
 import img2 from '../../Assets/lms-bg-signup.png'
-import { InitialState, ReducerFun } from '../Functions/useReducer'
 
 const SignupPage = () => {
  

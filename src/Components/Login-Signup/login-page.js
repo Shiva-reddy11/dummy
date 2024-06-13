@@ -2,21 +2,9 @@ import React, { useEffect, useReducer, useRef } from 'react'
 import './style.css'
 import googleicon from '../../Assets/google-logo-icon.png'
 import img from '../../Assets/banner.png'
-import { Link } from 'react-router-dom'
-import { InitialState, ReducerFun } from '../Functions/useReducer'
 
 const LoginPage = () => {
-  const [state,dispatch]=useReducer(ReducerFun,InitialState)
-useEffect(()=>{
-  loginfun()
-},[])
-  const loginfun =()=>{
-    const action ={
-      type :"LOGINTRUE"
-   }
-
-   dispatch(action)
-  }
+ 
 
   return (
    <>
@@ -35,7 +23,7 @@ useEffect(()=>{
         <input type='text' required placeholder='Enter password' id='login-input'/>
         <input type='submit' value={'Log in'} id='login'/>
       </form>
-      <a href='/signup'><button id='create-btn' className='shadow-xl' onClick={loginfun}>Create Account</button></a>
+      <a href='/signup'><button id='create-btn' className='shadow-xl' >Create Account</button></a>
       <h2>or</h2>
       <button id='create-btn' className='shadow-xl flex justify-center items-center gap-3'><img src={googleicon}/>Sign in With Google</button>
     </div>

@@ -1,71 +1,52 @@
-// import React from 'react'
-// import { coursesCard } from '../dummy-data'
-// import OnlineCourses from '../Components/AllCourses/online-courses'
-// import img2 from '../Assets/courses/c2.png'
-// import back from '../Assets/back.webp'
-// import '../Components/AllCourses/courses.css'
-// import Title from '../Components/Common/title'
+import React from 'react'
+import { Link} from "react-router-dom";
+import { exploreCourses } from '../dummy-data';
+import Title from '../Components/Common/title';
 
-// const CoursesHomePage = () => {
-//   return (
-//    <>
-//    <>
-//       <section className='homeAbout'>
-//         <div className='container-home'>
-//           <Title subtitle='our courses' title='explore our popular online courses' />
-//           <div className='courseCard'>
-//     <div className='container grid2'>
-//         {coursesCard.slice(0,3).map((val)=>{
-//             return(
-//              <div className='items'>
-//                 <div className='content flex'>
-//                     <div className='left'>
-//                         <div className='img'>
-//                             <img src={img2} alt='img'/>   
-//                         </div>
-//                     </div> 
-//                     <div className='text'>
-//                         <h1>{val.coursesName}</h1>
-//                         <div className='rate'>
-//                             <i className='fa fa-star'></i>
-//                             <i className='fa fa-star'></i>
-//                             <i className='fa fa-star'></i>
-//                             <i className='fa fa-star'></i>
-//                             <i className='fa fa-star'></i>
-//                             <label>(5.0)</label>
-//                         </div>
-//                         <div className='details'>
-//                         {/* this beacuse we are fetch the nested api */}
-//                         {val.courTeacher.map((details) => (
-//                       <>
-//                         <div className='box'>
-//                           <div className='dimg'>
-//                             <img src={back} alt='' />
-//                           </div>
-//                           <div className='para'>
-//                             <h4>{details.name}</h4>
-//                           </div>
-//                         </div>
-//                         <span>{details.totalTime}</span>
-//                       </>
-//                     ))}
-//                         </div>
-//                     </div>
-//                 </div>
-//                 <div>
-//                     <h3>{val.priceAll} / {val.pricePer}</h3>
-//                 </div>
-//                 <button className='outline-btn'>ENROLL NOW !</button>
-//              </div>
-//         )})}
-//     </div>
-//    </div>
-         
-//         </div>
-//         <OnlineCourses />
-//       </section>
-//     </></>
-//   )
-// }
 
-// export default CoursesHomePage
+const CoursesCardsHome = () => {
+  return (
+    <>
+    <section >
+      
+      <div className='bg-white '>
+        <Title title={'All Courses'} subtitle={'Category'}/>
+        <div id='course-box' className='grid grid-cols-2 gap-2 ml-14 mr-14 mb-14 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4   ' >
+        {exploreCourses.slice(0,4).map(val=>(
+          <div  className='bg-slate-50 border rounded-lg border-gray-600 flex flex-col justify-center items-center p-5 gap-2'>
+          <img src={val.image} className=' p-0 mb-0 h-44 shadow-md rounded-full'/>
+          <p className=' text-lg mt-6'>{val.title}</p>
+          
+          <div className='rate'>
+                    <i className='fa fa-star' style={{color: "#fda63a",}}></i>
+                    <i className='fa fa-star' style={{color: "#fda63a",}}></i>
+                    <i className='fa fa-star' style={{color: "#fda63a",}}></i>
+                    <i className='fa fa-star' style={{color: "#fda63a",}}></i>
+                    <i className='fa fa-star' ></i>
+                    <label htmlFor=''>(4.0)</label>
+                  </div>
+                  
+                  <hr className='border border-yellow-500'/>
+                  
+                  <div className='flex justify-center items-center gap-20 mt-3 '>
+                  <p>₹ {val.price}</p>
+                  <Link to={`${val.title}`}> <button className='border rounded-lg border-gray-600 p-2 hover:-translate-y-1 hover:scale-100 duration-200 hover:bg-green-500 hover:text-white' >Buy Now</button></Link>
+                  </div>
+                  
+          </div>
+          
+        ))}
+        </div>
+        <div className='flex justify-center '>
+       <Link to={'/courses'}><button className='border border-secondary-500 rounded-full m-14 p-3 bg-blue-400 text-white hover:-translate-y-1 hover:scale-100 duration-200 hover:font-semibold'>Broswe All Courses</button></Link> 
+        </div>
+        
+      </div>
+    
+    </section>
+    
+    </>
+  )
+}
+
+export default CoursesCardsHome

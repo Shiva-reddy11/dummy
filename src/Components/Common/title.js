@@ -3,9 +3,9 @@
 const Title = ({ subtitle, title }) => {
     return (
       <>
-        <div id='heading'>
-          <p className="h6">{subtitle} </p>
-          <p className="h4">{title} </p>
+        <div className="text-center p-10">
+          <p className="text-3xl text-secondary font-normal ">{subtitle} </p>
+          <p className="text-5xl font-normal p-5">{title} </p>
         </div>
       </>
     )

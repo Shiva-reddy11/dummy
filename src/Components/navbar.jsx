@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import menu from "../Assets/menu.png";
 import close from "../Assets/close.png";
 import '../App.css'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -33,15 +33,13 @@ const Navbar = () => {
         <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Courses
         </ul></Link>
-        <Link to={'/team'}> <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
-          Bolgs
-        </ul></Link>
+        
        <Link to={'/about'}> <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           About
         </ul></Link>
-        <ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
+        <Link to={'/contact'}><ul className="text-2xl cursor-pointer hover:-translate-y-1 hover:scale-110 duration-200 ">
           Contact
-        </ul>
+        </ul></Link>  
       </div>
       <button className="hidden lg:flex items-center gap-1 border border-gray-800 text-2xl hover:border-gray-400 text-secondary px-6 py-2 mr-10 rounded-lg">
         Login
@@ -85,15 +83,14 @@ const Navbar = () => {
             Courses
           </ul>
           </Link> 
-         <Link to={'/team'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
-            Bolgs
-          </ul></Link>
+        
           <Link to={'/about'}> <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             About
           </ul></Link>
+          <Link to={'/contact'}>
           <ul className="font-medium m-3 p-3 hover:bg-gray-100 rounded">
             Contact
-          </ul>
+          </ul></Link>
         </div>
         <div className="h-[1px] bg-gray-100"></div>
         <button className="mt-6 w-full text-2xl flex gap-2 item-center px-6 py-3 rounded-lg hover:bg-gray-100 font-size:30px text-secondary">

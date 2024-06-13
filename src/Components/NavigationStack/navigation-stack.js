@@ -4,27 +4,37 @@ import About from "../About/about-page";
 import CoursesHomePage from "../../Pages/courses-home-page";
 import SignupPage from "../Login-Signup/signup-page";
 import LoginPage from "../Login-Signup/login-page";
-import { useReducer } from "react";
-import { InitialState, ReducerFun } from "../Functions/useReducer";
 import CoursesPage from "../Courses/courses-page";
+import ContactPage from "../Contact/contact-page";
+import PageNotFound from "../../Pages/404";
+import CoursesCards from "../Courses/courses-cards";
+import CoursesDetails from "../Courses/Courses Details/courses-details";
+import CoursesCardsHome from "../../Pages/courses-home-page";
+import Example from "../Courses/top-courses";
 
 
 
 const NavigationStack = () => {
-    const [state,dispatch] = useReducer(ReducerFun,InitialState)
-    console.log('state: ', state[0].Login);
-    
+   
 return(
 
     <>
     <BrowserRouter>
     <Routes>
+    <Route path="/*" Component={PageNotFound}/>
     <Route path="/" Component={Home}/>
     <Route path="/about" Component={About}/>
+    <Route path="/contact" Component={ContactPage}/>
+
+
     <Route path="/courses" Component={CoursesPage}/>
+    <Route path="/coursescards" Component={CoursesCards}/>
+    <Route path="/courses/:title" Component={CoursesDetails}/>
+    <Route path="/:title" Component={CoursesDetails}/>
     </Routes>
 
     <Routes>
+        <Route path="/example" Component={Example}/>
         <Route path="/CoursesHomePage" Component={CoursesHomePage}/> 
         <Route path="/login" Component={LoginPage}/>
         <Route path="/signup" Component={SignupPage}/>

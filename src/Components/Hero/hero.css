@@ -46,14 +46,10 @@
   .roww{
     position: relative;
     left: 100px;
-    bottom: 80px;
+    top: 150px;
     width: 50%;
   } 
   
-  #heading{
-    text-align: center;
-    padding: 40px 0;
-  }
   #heading h3{
     font-size: 40px;
     font-weight: 600;
@@ -83,8 +79,8 @@
     }
     .roww{
       position: relative;
-      left: -30px;
-      bottom: 131px;
+      left: 37px;
+      bottom: -30px;
       width: 63%;
     }
     #heading h3{

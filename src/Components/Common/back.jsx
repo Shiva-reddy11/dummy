@@ -5,11 +5,11 @@ const Back = ({title}) => {
     const location = useLocation()
   return (
     <>
-    <section className='back'>
-       <h2>Home {'>'} {location.pathname.split('/')[1]}</h2>
-       <h1>{title}</h1>
+    <section className='absolute bottom-40 left-56 text-center  '>
+       <h2 className='text-5xl '>Home {'>'} {location.pathname.split('/')[1]}</h2>
+       <h1 className='text-5xl mt-4'>{title}</h1>
     </section>
-    {/* <div className="marginn"></div> */}
+    {/* <div className="marginn "></div> */}
     </>
   )
 }
